@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+.container .box {
+  width: 25%;
+  text-align: center;
+  background-color: gray;
+  position: relative;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+@media screen and (max-width: 576px) {
+  .container .box {
+    width: 100%;
+    padding: 5px 0;
+  }
+}
+.container .box img {
+  width: 200px;
+  transition: 0.5s;
+}
+.container .box::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  bottom: 100px;
+  right: 0;
+  transform: rotate(45deg) translateX(30px);
+  z-index: 10;
+  transition: 0.5s;
+}
+@media screen and (max-width: 576px) {
+  .container .box::before {
+    display: none;
+  }
+}
+.container .box:hover {
+  background-color: blue !important;
+}
+.container .box:hover img {
+  transform: scale(1.05);
+}
+.container .box:hover::before {
+  background-color: blue !important;
+}
+.container .box.box2 {
+  background-color: yellow;
+}
+.container .box.box2::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  bottom: 100px;
+  right: 0;
+  transform: rotate(45deg) translateX(30px);
+  z-index: 10;
+}
+.container .box.box3 {
+  background-color: green;
+}
+.container .box.box3::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  bottom: 100px;
+  right: 0;
+  transform: rotate(45deg) translateX(30px);
+  z-index: 10;
+}
+.container .box.box4 {
+  background-color: brown;
+}
+.container .box.box4::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  bottom: 100px;
+  right: 0;
+  transform: rotate(45deg) translateX(30px);
+  z-index: 10;
+}
+.container .box.box5 {
+  background-color: chocolate;
+}
+.container .box.box5::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  bottom: 100px;
+  right: 0;
+  transform: rotate(45deg) translateX(30px);
+  z-index: 10;
+}
+.container .box.box6 {
+  background-color: aqua;
+}
+.container .box.box6::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  bottom: 100px;
+  right: 0;
+  transform: rotate(45deg) translateX(30px);
+  z-index: 10;
+}
+.container .box.box7 {
+  background-color: red;
+}
+.container .box.box7::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  bottom: 100px;
+  right: 0;
+  transform: rotate(45deg) translateX(30px);
+  z-index: 10;
+}
+.container .box.box8 {
+  background-color: rgb(84, 124, 101);
+}
+.container .box.box8::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  bottom: 100px;
+  right: 0;
+  transform: rotate(45deg) translateX(30px);
+  z-index: 10;
+}
+
+/*# sourceMappingURL=index.css.map */
